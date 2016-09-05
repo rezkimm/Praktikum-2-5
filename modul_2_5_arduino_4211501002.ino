@@ -6,7 +6,7 @@ DDRB=0x10;
 }
 
 void loop() {
-if(PINC==0x00){
+  if(bit_is_clear(PINC,0)) { 
   PORTB=0x10;
 }
 else {
